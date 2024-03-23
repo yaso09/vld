@@ -28,11 +28,23 @@ if param == "çalıştır" or param == "-ç":
     except IndexError: print("""
     Lütfen paket adı girin
     """)
+elif param == "listele" or param == "-l":
+    url = "https://api.github.com/repos/yaso09/vld/contents/packages"
+    res = requests.get(url)
+    files = res.json
+    print("""
+    PAKET ADI
+    """)
+    for file in files:
+        print("""
+    {}
+        """.format(file["name"]))
 elif param == "yardım" or param == "-y":
     print("""
     KOMUT\tKULLANIM\tÖRNEK
 
     çalıştır    (-ç)\tPaketi kur\tvld -k disp
+    listele     (-l)\tÇevrimiçi paketleri listele\tvld -l
     yardım      (-y)\tYardım al\tvld -y\n
 
     Github deposu: https://github.com/yaso09/vld
