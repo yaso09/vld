@@ -9,5 +9,6 @@ mv dist/vld $HOME/bin
 rm -rf build
 rm -rf dist
 rm vld.spec
+alias vld=$HOME/bin/vld
 
 

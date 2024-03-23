@@ -5,6 +5,8 @@ print("""
     Daha fazla bilgi için `-y` veya `yardım` yazın
 """)
 
+if not len(sys.argv) > 1: os._exit(0)
+
 param = sys.argv[1]
 
 if not param: os._exit(0)
@@ -30,6 +32,9 @@ elif param == "yardım" or "-y":
 
     Github deposu: https://github.com/yaso09/vld
     """)
+else: print("""
+    Bilinmeyen komut
+""")
 
 
 
