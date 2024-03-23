@@ -38,7 +38,7 @@ elif param == "listele" or param == "-l":
     for file in files:
         print("""
     {}
-        """.format(file["name"]))
+        """.format(str(file["name"])).split(".py")[0])
 elif param == "yardım" or param == "-y":
     print("""
     KOMUT\tKULLANIM\tÖRNEK
