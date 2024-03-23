@@ -4,7 +4,7 @@ python -m pip install requests
 # Build Python script
 pyinstaller -F vld.py
 # Move build to bin
-mv dist/cls $HOME/bin
+mv dist/vld $HOME/bin
 # Delete other files
 rm -rf build
 rm -rf dist
