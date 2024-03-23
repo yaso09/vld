@@ -3,7 +3,7 @@
 
 ## Kullanım
 ```shell
-git clone https://github.com/yaso09/vld
+git clone https://github.com/yaso09/vld.git
 sh build.sh
 ```
 
