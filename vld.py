@@ -36,9 +36,7 @@ elif param == "listele" or param == "-l":
     PAKET ADI
     """)
     for file in files:
-        print("""
-    {}
-        """.format(str(file["name"])).split(".py")[0])
+        print("    {}".format(str(file["name"])).split(".py")[0])
 elif param == "yardım" or param == "-y":
     print("""
     KOMUT\tKULLANIM\tÖRNEK
