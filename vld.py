@@ -31,7 +31,7 @@ if param == "çalıştır" or param == "-ç":
 elif param == "listele" or param == "-l":
     url = "https://api.github.com/repos/yaso09/vld/contents/packages"
     res = requests.get(url)
-    files = res.json
+    files = res.json()
     print("""
     PAKET ADI
     """)
