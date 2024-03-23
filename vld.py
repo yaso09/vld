@@ -18,7 +18,7 @@ if param == "çalıştır" or param == "-ç":
         )
         if res:
             f = open("run.py", "w")
-            f.write(res.content)
+            f.write(res.text)
             f.close()
             os.system("python run.py")
             os.remove("run.py")
