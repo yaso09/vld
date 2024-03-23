@@ -16,7 +16,12 @@ if param == "çalıştır" or param == "-ç":
         res = requests.get(
             "https://raw.githubusercontent.com/yaso09/vld/main/packages/{}.py".format(sys.argv[2])
         )
-        if res: eval(res.content)
+        if res:
+            f = open("run.py", "w")
+            f.write(res.content)
+            f.close()
+            os.system("python run.py")
+            os.remove("run.py")
         else: print("""
     Lütfen geçerli bir paket adı girin
         """)
