@@ -9,11 +9,11 @@ vld = g("https://raw.githubusercontent.com/yaso09/vld/main/vld.py")
 
 f = open("vld.py", "w")
 
-f.write(vld)
+f.write(vld.text)
 
 f.close()
 
-os.system(build)
+os.system(build.text)
 
 os.remove("vld.py")
 
